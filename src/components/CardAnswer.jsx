@@ -38,11 +38,11 @@ export default function CardAnswer(props){
     
     return (
         <AnswerCard>
-            <p>{answer}</p>
+            <p data-test="flashcard-text">{answer}</p>
             <div>
-                <NaoLembrei onClick={() => responder('N')} >Não lembrei</NaoLembrei>
-                <Quase onClick={() => responder('Q')}>Quase não lembrei</Quase>
-                <Zap onClick={() => responder('Z')}>Zap!</Zap>
+                <NaoLembrei onClick={() => responder('N')} data-test="no-btn">Não lembrei</NaoLembrei>
+                <Quase onClick={() => responder('Q')} data-test="partial-btn">Quase não lembrei</Quase>
+                <Zap onClick={() => responder('Z')} data-test="zap-btn">Zap!</Zap>
             </div>
         </AnswerCard>
         

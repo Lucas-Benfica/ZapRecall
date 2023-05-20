@@ -9,7 +9,7 @@ export default function Welcome(props) {
             
                 <img src={logo} alt="zap" />
                 <h1>ZapRecall</h1>
-                <button onClick={() => setStart(true)}>
+                <button data-test="start-btn" onClick={() => setStart(true)}>
                     Iniciar Recall!
                 </button>
             

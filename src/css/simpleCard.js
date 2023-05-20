@@ -14,7 +14,7 @@ const SimpleCard = styled.div`
     color: ${(props) => props.newColor};
     text-decoration: ${(props) => props.newTextDec };
     p{
-        font-family: 'Recursive';
+        font-family: 'Recursive', sans-serif;
         font-weight: 700;
         font-size: 16px;
         line-height: 19px;

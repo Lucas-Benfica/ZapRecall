@@ -8,8 +8,8 @@ export default function CardQuestion(props){
 
     return (
         <QuestionCard>
-            <p>{question}</p>
-            <img src={virar} onClick={ () => setTrocar('answer') } />
+            <p data-test="flashcard-text">{question}</p>
+            <img data-test="turn-btn" src={virar} onClick={ () => setTrocar('answer') } />
         </QuestionCard>
     );
 }

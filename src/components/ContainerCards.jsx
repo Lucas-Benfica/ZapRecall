@@ -30,5 +30,5 @@ const AllCards = styled.div`
     align-items: center;
     width: 300px;
     height: auto;
-    margin: 0 auto 375px;
+    margin: 0 auto 180px;
 `;

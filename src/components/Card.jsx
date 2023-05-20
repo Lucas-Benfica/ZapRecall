@@ -21,20 +21,21 @@ export default function Card(props){
 
     if(trocar === ''){
         return (
-            <CardSimple 
+            <CardSimple data-test="flashcard"
             setTrocar={setTrocar} 
-            number={number} img={img}
+            number={number} img={img} imagens={imagens}
             color={color} textDec={textDec} />
         );
     }
     else if(trocar === 'question'){
         return (
-            <CardQuestion setTrocar={setTrocar} question={question} />
+            <CardQuestion data-test="flashcard" 
+            setTrocar={setTrocar} question={question} />
         );        
     }
     else if(trocar === 'answer'){
         return (
-            <CardAswer 
+            <CardAswer data-test="flashcard"
             setTrocar={setTrocar} answer={answer}
             answerCounter={answerCounter} setAnswerCounter={setAnswerCounter} 
             arrayAnswers={arrayAnswers}  setArrayAnswers={setArrayAnswers} 
