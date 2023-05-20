@@ -1,5 +1,10 @@
 import styled from "styled-components";
 import ResultIcons from "./ResultIcons";
+import certo from "../assets/icone_certo.png"
+import erro from "../assets/icone_erro.png"
+import quase from "../assets/icone_quase.png"
+
+const imagens = [erro, quase, certo];
 
 
 export default function Results(props){
@@ -12,9 +17,7 @@ export default function Results(props){
             <div className="containerResult">
                 <p>{cont}/{max} CONCLUÍDOS</p>
                 <div>
-                    <ResultIcons />
-                    <ResultIcons />
-                    <ResultIcons />
+                    {arrayAnswers.map( (resp, i) => <ResultIcons key={i} resp={resp} imagens={imagens} />  )}
                 </div>
             </div>
 

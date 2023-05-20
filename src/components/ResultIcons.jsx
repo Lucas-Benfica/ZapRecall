@@ -1,13 +1,25 @@
 import styled from "styled-components";
-import certo from "../assets/icone_certo.png"
-import erro from "../assets/icone_erro.png"
-import quase from "../assets/icone_quase.png"
+
 
 
 export default function ResultIcons(props){
+    
+    const {resp, imagens} = props;
+    let img = undefined;
+
+    if(resp === 'N'){
+      img = imagens[0];
+    }
+    else if(resp === 'Q'){
+      img = imagens[1];
+    }
+    else if(resp === 'Z'){
+      img = imagens[2];
+    }
+
 
     return (
-        <StyledImage src={certo} />
+        <StyledImage src={img} />
     );
 }
 
