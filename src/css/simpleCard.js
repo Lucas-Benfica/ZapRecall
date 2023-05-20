@@ -11,18 +11,17 @@ const SimpleCard = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: ${(props) => props.newColor};
+    text-decoration: ${(props) => props.newTextDec };
     p{
         font-family: 'Recursive';
         font-weight: 700;
         font-size: 16px;
         line-height: 19px;
-        color: &{(props) => props.color};
-        font-style: &{(props) => props.textDec};
     }
     img{
-        width: 20px;
+        width: 23   px;
         height: 23px;
-        color: #333333;
         &:hover{
             cursor: pointer;
         }

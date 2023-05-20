@@ -3,8 +3,7 @@ import Card from "./Card";
 
 export default function ConteinerCards(props){
     
-    const {cards, setAnswerCounter, setArrayAnswers} = props;
-
+    const {cards, answerCounter, setAnswerCounter, arrayAnswers, setArrayAnswers} = props;
     return(
         <AllCards>
 
@@ -13,8 +12,10 @@ export default function ConteinerCards(props){
                     key={card.id}
                     number={card.id}
                     question={card.question} 
-                    answer={card.asnwer} 
-                    setAnswerCounter={setAnswerCounter} 
+                    answer={card.answer} 
+                    answerCounter={answerCounter}
+                    setAnswerCounter={setAnswerCounter}
+                    arrayAnswers={arrayAnswers} 
                     setArrayAnswers={setArrayAnswers} 
                 />))
             }

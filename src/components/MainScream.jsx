@@ -16,8 +16,17 @@ export default function MainScream(props){
                 <img src={logo} alt="zap" />
                 <h1>ZapRecall</h1>
             </Content>
-            <ConteinerCards cards={CARDS} setAnswerCounter={setAnswerCounter} setArrayAnswers={setArrayAnswers} />
-            <Results cont={answerCounter} max={CARDS.length} arrayAnswers={arrayAnswers} />
+
+            <ConteinerCards 
+            cards={CARDS} 
+            answerCounter={answerCounter} setAnswerCounter={setAnswerCounter} 
+            arrayAnswers={arrayAnswers}  setArrayAnswers={setArrayAnswers}
+            />
+
+            <Results 
+            cont={answerCounter} 
+            max={CARDS.length} arrayAnswers={arrayAnswers} 
+            />
         </ConteinerMain>
     );
 }

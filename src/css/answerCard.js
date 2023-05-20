@@ -11,14 +11,6 @@ const AnswerCard = styled(QuestionCard)`
         width: 265px;
     }
 
-    button{
-        width: 83px;
-        height: 37px;
-        background: #FF3030;
-        border-radius: 5px;  
-        border: none;
-    }
-
 `;
 
 export default AnswerCard;
