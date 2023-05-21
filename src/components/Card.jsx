@@ -21,7 +21,7 @@ export default function Card(props){
 
     if(trocar === ''){
         return (
-            <CardSimple data-test="flashcard"
+            <CardSimple 
             setTrocar={setTrocar} 
             number={number} img={img} imagens={imagens}
             color={color} textDec={textDec} />
@@ -29,13 +29,13 @@ export default function Card(props){
     }
     else if(trocar === 'question'){
         return (
-            <CardQuestion data-test="flashcard" 
+            <CardQuestion  
             setTrocar={setTrocar} question={question} />
         );        
     }
     else if(trocar === 'answer'){
         return (
-            <CardAswer data-test="flashcard"
+            <CardAswer 
             setTrocar={setTrocar} answer={answer}
             answerCounter={answerCounter} setAnswerCounter={setAnswerCounter} 
             arrayAnswers={arrayAnswers}  setArrayAnswers={setArrayAnswers} 

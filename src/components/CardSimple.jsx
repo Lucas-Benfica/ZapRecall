@@ -27,7 +27,7 @@ export default function CardSimple(props){
     }
 
     return (
-        <SimpleCard newColor={color} newTextDec={textDec} >
+        <SimpleCard data-test="flashcard" newColor={color} newTextDec={textDec} >
 
                 <p data-test="flashcard-text">Pergunta {number}</p>
                 

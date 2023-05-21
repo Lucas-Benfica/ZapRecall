@@ -37,7 +37,7 @@ export default function CardAnswer(props){
     
     
     return (
-        <AnswerCard>
+        <AnswerCard data-test="flashcard">
             <p data-test="flashcard-text">{answer}</p>
             <div>
                 <NaoLembrei onClick={() => responder('N')} data-test="no-btn">Não lembrei</NaoLembrei>
